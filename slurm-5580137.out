@@ -1,0 +1,8 @@
+Loading compiler/latest
+  Loading requirement: tbb/latest compiler-rt/latest oclfpga/latest
+/var/spool/slurm/job5580137/slurm_script: line 30: advixe-cl: command not found
+/var/spool/slurm/job5580137/slurm_script: line 31: advixe-cl: command not found
+/var/spool/slurm/job5580137/slurm_script: line 32: advixe-cl: command not found
+/var/spool/slurm/job5580137/slurm_script: line 35: advixe-cl: command not found
+/var/spool/slurm/job5580137/slurm_script: line 36: advixe-cl: command not found
+/var/spool/slurm/job5580137/slurm_script: line 37: advixe-cl: command not found

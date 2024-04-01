@@ -1,0 +1,12 @@
+-r
+/mnt/lustre/e1000/home/m23oc/m23oc/s2484724/MD/C/opt_results/e000/trc000
+-quiet
+-cs-file
+/mnt/lustre/e1000/home/m23oc/m23oc/s2484724/MD/C/opt_results/e000/callstacks.def
+--cs-mode=no-count-loops,no-count-flops,stl-profiling,stack-stitching
+--count-flops
+--benchmarks=dram,mcdram,cpu_cache,flop_peak,int
+--jit-profiling
+--gpu-collect-traffic
+--
+./MD

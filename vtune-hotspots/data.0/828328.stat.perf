@@ -1,0 +1,61 @@
+# AMPLXE_PERF_STAT
+# hostname : r1i0n35
+# os release : 4.18.0-305.25.1.el8_4.x86_64
+# arch : x86_64
+# cpuid : GenuineIntel,6,79,1
+# cpudesc : Intel(R) Xeon(R) CPU E5-2695 v4 @ 2.10GHz
+# total memory : 263585924 kB
+# nrcpus online : 72
+# nrcpus avail : 72
+# sibling cores : 0-17,36-53
+# sibling cores : 18-35,54-71
+# sibling threads : 0,36
+# sibling threads : 1,37
+# sibling threads : 2,38
+# sibling threads : 3,39
+# sibling threads : 4,40
+# sibling threads : 5,41
+# sibling threads : 6,42
+# sibling threads : 7,43
+# sibling threads : 8,44
+# sibling threads : 9,45
+# sibling threads : 10,46
+# sibling threads : 11,47
+# sibling threads : 12,48
+# sibling threads : 13,49
+# sibling threads : 14,50
+# sibling threads : 15,51
+# sibling threads : 16,52
+# sibling threads : 17,53
+# sibling threads : 18,54
+# sibling threads : 19,55
+# sibling threads : 20,56
+# sibling threads : 21,57
+# sibling threads : 22,58
+# sibling threads : 23,59
+# sibling threads : 24,60
+# sibling threads : 25,61
+# sibling threads : 26,62
+# sibling threads : 27,63
+# sibling threads : 28,64
+# sibling threads : 29,65
+# sibling threads : 30,66
+# sibling threads : 31,67
+# sibling threads : 32,68
+# sibling threads : 33,69
+# sibling threads : 34,70
+# sibling threads : 35,71
+# process id : 828328
+;;225492054091;0
+;;144227916273;1
+;;299390418843;2
+;;6867672619;3
+;;6864409816;4
+;;0;5
+;;0;6
+;;0;7
+;;79655085882;8
+;;14712156285;9
+;;0;10
+;;2327715;11
+;;288645749117;12
