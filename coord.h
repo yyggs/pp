@@ -32,7 +32,7 @@ DEF double mass[Nbody];
 DEF double radius[Nbody];
 DEF double delta_pos[Npair][3];
 DEF double r[Nbody];
-DEF double delta_r;
+DEF double delta_r[Npair];
 DEF double wind[Ndim];
 DEF int collisions;
 
