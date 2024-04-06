@@ -43,46 +43,45 @@ INLINE REPORT: (main(int, char **)) [1/8=12.5%] control.c(14,33)
   -> EXTERN: (39,3) memset(void *, int, size_t)
   -> EXTERN: (40,3) memset(void *, int, size_t)
   -> EXTERN: (41,3) memset(void *, int, size_t)
-  -> EXTERN: (42,3) memset(void *, int, size_t)
-  -> EXTERN: (47,8) fopen(const char *__restrict__, const char *__restrict__)
-  -> EXTERN: (50,5) perror(const char *)
-  -> EXTERN: (51,5) exit(int)
-  -> EXTERN: (55,5) fscanf(FILE *__restrict__, const char *__restrict__, ...)
-  -> EXTERN: (60,3) fclose(FILE *)
-  -> INLINE: (66,11) second() (isz = 9) (sz = 14)
-    -> EXTERN: (102,13) gettimeofday(struct timeval *__restrict__, __timezone_ptr_t)
-  -> INLINE: (68,13) second() (isz = 9) (sz = 14)
-    -> EXTERN: (102,13) gettimeofday(struct timeval *__restrict__, __timezone_ptr_t)
-  -> (69,7) evolve(int, double) (isz = 411) (sz = 418)
-     [[ Inlining would exceed -inline-max-size value (418>230) <1>]]
-  -> INLINE: (70,12) second() (isz = 9) (sz = 14)
-    -> EXTERN: (102,13) gettimeofday(struct timeval *__restrict__, __timezone_ptr_t)
+  -> EXTERN: (46,8) fopen(const char *__restrict__, const char *__restrict__)
+  -> EXTERN: (49,5) perror(const char *)
+  -> EXTERN: (50,5) exit(int)
+  -> EXTERN: (54,5) fscanf(FILE *__restrict__, const char *__restrict__, ...)
+  -> EXTERN: (59,3) fclose(FILE *)
+  -> INLINE: (65,11) second() (isz = 9) (sz = 14)
+    -> EXTERN: (101,13) gettimeofday(struct timeval *__restrict__, __timezone_ptr_t)
+  -> INLINE: (67,13) second() (isz = 9) (sz = 14)
+    -> EXTERN: (101,13) gettimeofday(struct timeval *__restrict__, __timezone_ptr_t)
+  -> (68,7) evolve(int, double) (isz = 232) (sz = 239)
+     [[ Inlining would exceed -inline-max-size value (239>230) <1>]]
+  -> INLINE: (69,12) second() (isz = 9) (sz = 14)
+    -> EXTERN: (101,13) gettimeofday(struct timeval *__restrict__, __timezone_ptr_t)
+  -> EXTERN: (70,7) printf(const char *__restrict__, ...)
   -> EXTERN: (71,7) printf(const char *__restrict__, ...)
-  -> EXTERN: (72,7) printf(const char *__restrict__, ...)
-  -> EXTERN: (73,7) fflush(FILE *)
-  -> EXTERN: (75,7) sprintf(char *__restrict__, const char *__restrict__, ...)
-  -> EXTERN: (76,13) fopen(const char *__restrict__, const char *__restrict__)
-  -> EXTERN: (79,2) perror(const char *)
-  -> EXTERN: (80,2) exit(int)
-  -> EXTERN: (84,2) fprintf(FILE *__restrict__, const char *__restrict__, ...)
-  -> EXTERN: (89,7) fclose(FILE *)
-  -> INLINE: (91,9) second() (isz = 9) (sz = 14)
-    -> EXTERN: (102,13) gettimeofday(struct timeval *__restrict__, __timezone_ptr_t)
-  -> EXTERN: (92,3) printf(const char *__restrict__, ...)
+  -> EXTERN: (72,7) fflush(FILE *)
+  -> EXTERN: (74,7) sprintf(char *__restrict__, const char *__restrict__, ...)
+  -> EXTERN: (75,13) fopen(const char *__restrict__, const char *__restrict__)
+  -> EXTERN: (78,2) perror(const char *)
+  -> EXTERN: (79,2) exit(int)
+  -> EXTERN: (83,2) fprintf(FILE *__restrict__, const char *__restrict__, ...)
+  -> EXTERN: (88,7) fclose(FILE *)
+  -> INLINE: (90,9) second() (isz = 9) (sz = 14)
+    -> EXTERN: (101,13) gettimeofday(struct timeval *__restrict__, __timezone_ptr_t)
+  -> EXTERN: (91,3) printf(const char *__restrict__, ...)
 
 
     Report from: Loop nest, Vector & Auto-parallelization optimizations [loop, vec, par]
 
 
-LOOP BEGIN at control.c(54,3)
-   remark #15527: loop was not vectorized: function call to fscanf(FILE *__restrict__, const char *__restrict__, ...) cannot be vectorized   [ control.c(55,5) ]
+LOOP BEGIN at control.c(53,3)
+   remark #15527: loop was not vectorized: function call to fscanf(FILE *__restrict__, const char *__restrict__, ...) cannot be vectorized   [ control.c(54,5) ]
 LOOP END
 
-LOOP BEGIN at control.c(67,4)
-   remark #15520: loop was not vectorized: loop with multiple exits cannot be vectorized unless it meets search loop idiom criteria   [ control.c(80,2) ]
+LOOP BEGIN at control.c(66,4)
+   remark #15520: loop was not vectorized: loop with multiple exits cannot be vectorized unless it meets search loop idiom criteria   [ control.c(79,2) ]
 
-   LOOP BEGIN at control.c(83,7)
-      remark #15527: loop was not vectorized: function call to fprintf(FILE *__restrict__, const char *__restrict__, ...) cannot be vectorized   [ control.c(84,2) ]
+   LOOP BEGIN at control.c(82,7)
+      remark #15527: loop was not vectorized: function call to fprintf(FILE *__restrict__, const char *__restrict__, ...) cannot be vectorized   [ control.c(83,2) ]
    LOOP END
 LOOP END
 
@@ -96,7 +95,6 @@ control.c(38,3):remark #34026: call to memset implemented as a call to optimized
 control.c(39,3):remark #34026: call to memset implemented as a call to optimized library version
 control.c(40,3):remark #34026: call to memset implemented as a call to optimized library version
 control.c(41,3):remark #34026: call to memset implemented as a call to optimized library version
-control.c(42,3):remark #34026: call to memset implemented as a call to optimized library version
 control.c(14,33):remark #34051: REGISTER ALLOCATION : [main] control.c:14
 
     Hardware registers
@@ -106,10 +104,10 @@ control.c(14,33):remark #34051: REGISTER ALLOCATION : [main] control.c:14
         Assigned     :   22[ rax rdx rcx rbx rsi rdi r8-r15 zmm0-zmm7]
         
     Routine temporaries
-        Total         :     180
+        Total         :     176
             Global    :      39
-            Local     :     141
-        Regenerable   :      91
+            Local     :     137
+        Regenerable   :      87
         Spilled       :       8
         
     Routine stack
@@ -133,56 +131,87 @@ Begin optimization report for: evolve(int, double)
     Report from: Interprocedural optimizations [ipo]
 
 INLINE REPORT: (evolve(int, double)) [2/8=25.0%] MD.c(10,33)
-  -> EXTERN: (19,7) printf(const char *__restrict__, ...)
-  -> EXTERN: (20,7) printf(const char *__restrict__, ...)
+  -> EXTERN: (17,5) printf(const char *__restrict__, ...)
+  -> EXTERN: (18,5) printf(const char *__restrict__, ...)
 
 
     Report from: Loop nest, Vector & Auto-parallelization optimizations [loop, vec, par]
 
 
-LOOP BEGIN at MD.c(18,5)
+LOOP BEGIN at MD.c(16,3)
    remark #15542: loop was not vectorized: inner loop was already vectorized
    remark #25015: Estimate of max trip count of loop=100
 
-   LOOP BEGIN at MD.c(26,5)
-      remark #25084: Preprocess Loopnests: Moving Out Store    [ MD.c(26,30) ]
-      remark #15388: vectorization support: reference r[i] has aligned access   [ MD.c(28,7) ]
-      remark #15388: vectorization support: reference r[i] has aligned access   [ MD.c(29,7) ]
-      remark #15388: vectorization support: reference r[i] has aligned access   [ MD.c(29,7) ]
-      remark #15388: vectorization support: reference r[i] has aligned access   [ MD.c(30,7) ]
-      remark #15388: vectorization support: reference r[i] has aligned access   [ MD.c(30,19) ]
-      remark #15328: vectorization support: non-unit strided load was emulated for the variable <pos[i][0]>, stride is 3   [ MD.c(29,16) ]
-      remark #15328: vectorization support: non-unit strided load was emulated for the variable <pos[i][0]>, stride is 3   [ MD.c(29,28) ]
-      remark #15328: vectorization support: non-unit strided load was emulated for the variable <pos[i][1]>, stride is 3   [ MD.c(29,40) ]
-      remark #15328: vectorization support: non-unit strided load was emulated for the variable <pos[i][1]>, stride is 3   [ MD.c(29,52) ]
-      remark #15328: vectorization support: non-unit strided load was emulated for the variable <pos[i][2]>, stride is 3   [ MD.c(29,64) ]
-      remark #15328: vectorization support: non-unit strided load was emulated for the variable <pos[i][2]>, stride is 3   [ MD.c(29,76) ]
+   LOOP BEGIN at MD.c(21,5)
+   <Distributed chunk1>
+      remark #25426: Loop Distributed (4 way) 
+      remark #25408: memset generated
+      remark #15398: loop was not vectorized: loop was transformed to memset or memcpy
+   LOOP END
+
+   LOOP BEGIN at MD.c(21,5)
+   <Distributed chunk2>
+      remark #15388: vectorization support: reference r[i] has aligned access   [ MD.c(24,11) ]
+      remark #15388: vectorization support: reference r[i] has aligned access   [ MD.c(24,11) ]
+      remark #15388: vectorization support: reference r[i] has aligned access   [ MD.c(24,11) ]
+      remark #15388: vectorization support: reference r[i] has aligned access   [ MD.c(24,11) ]
+      remark #15388: vectorization support: reference r[i] has aligned access   [ MD.c(24,11) ]
+      remark #15388: vectorization support: reference r[i] has aligned access   [ MD.c(24,11) ]
+      remark #15328: vectorization support: non-unit strided load was emulated for the variable <pos[i][dim]>, stride is 3   [ MD.c(24,19) ]
+      remark #15328: vectorization support: non-unit strided load was emulated for the variable <pos[i][dim]>, stride is 3   [ MD.c(24,33) ]
+      remark #15328: vectorization support: non-unit strided load was emulated for the variable <pos[i][dim]>, stride is 3   [ MD.c(24,19) ]
+      remark #15328: vectorization support: non-unit strided load was emulated for the variable <pos[i][dim]>, stride is 3   [ MD.c(24,33) ]
+      remark #15328: vectorization support: non-unit strided load was emulated for the variable <pos[i][dim]>, stride is 3   [ MD.c(24,19) ]
+      remark #15328: vectorization support: non-unit strided load was emulated for the variable <pos[i][dim]>, stride is 3   [ MD.c(24,33) ]
       remark #15305: vectorization support: vector length 2
-      remark #15300: LOOP WAS VECTORIZED
-      remark #15448: unmasked aligned unit stride loads: 2 
+      remark #15399: vectorization support: unroll factor set to 4
+      remark #15301: PARTIAL LOOP WAS VECTORIZED
+      remark #15448: unmasked aligned unit stride loads: 1 
       remark #15449: unmasked aligned unit stride stores: 3 
       remark #15452: unmasked strided loads: 6 
       remark #15475: --- begin vector cost summary ---
-      remark #15476: scalar cost: 67 
-      remark #15477: vector cost: 33.500 
-      remark #15478: estimated potential speedup: 2.000 
+      remark #15476: scalar cost: 27 
+      remark #15477: vector cost: 18.000 
+      remark #15478: estimated potential speedup: 1.500 
       remark #15488: --- end vector cost summary ---
-      remark #25015: Estimate of max trip count of loop=2048
+      remark #25456: Number of Array Refs Scalar Replaced In Loop: 16
+      remark #25015: Estimate of max trip count of loop=512
+
+      LOOP BEGIN at MD.c(23,7)
+         remark #25436: completely unrolled by 3   (pre-vector) 
+      LOOP END
    LOOP END
 
-   LOOP BEGIN at MD.c(36,5)
-      remark #25084: Preprocess Loopnests: Moving Out Store    [ MD.c(36,30) ]
+   LOOP BEGIN at MD.c(21,5)
+   <Distributed chunk3>
+      remark #15388: vectorization support: reference r[i] has aligned access   [ MD.c(26,7) ]
+      remark #15388: vectorization support: reference r[i] has aligned access   [ MD.c(26,19) ]
+      remark #15305: vectorization support: vector length 2
+      remark #15399: vectorization support: unroll factor set to 4
+      remark #15301: PARTIAL LOOP WAS VECTORIZED
+      remark #15448: unmasked aligned unit stride loads: 1 
+      remark #15449: unmasked aligned unit stride stores: 1 
+      remark #15475: --- begin vector cost summary ---
+      remark #15476: scalar cost: 44 
+      remark #15477: vector cost: 17.000 
+      remark #15478: estimated potential speedup: 2.580 
+      remark #15488: --- end vector cost summary ---
+      remark #25015: Estimate of max trip count of loop=512
+   LOOP END
+
+   LOOP BEGIN at MD.c(21,5)
+   <Distributed chunk4>
       remark #15542: loop was not vectorized: inner loop was already vectorized
 
-      LOOP BEGIN at MD.c(38,7)
-         remark #15389: vectorization support: reference f[i][_2] has unaligned access
-         remark #15389: vectorization support: reference velo[i][_2] has unaligned access   [ MD.c(38,27) ]
-         remark #15388: vectorization support: reference wind[_2] has aligned access   [ MD.c(38,49) ]
-         remark #15389: vectorization support: reference pos[i][_2] has unaligned access   [ MD.c(38,85) ]
+      LOOP BEGIN at MD.c(27,7)
+         remark #15389: vectorization support: reference f[i][dim] has unaligned access   [ MD.c(28,11) ]
+         remark #15389: vectorization support: reference velo[i][dim] has unaligned access   [ MD.c(28,33) ]
+         remark #15388: vectorization support: reference wind[dim] has aligned access   [ MD.c(28,57) ]
+         remark #15389: vectorization support: reference pos[i][dim] has unaligned access   [ MD.c(28,95) ]
          remark #15381: vectorization support: unaligned access used inside loop body
          remark #15305: vectorization support: vector length 2
          remark #15309: vectorization support: normalized vectorization overhead 0.327
-         remark #15301: MATERIALIZED LOOP WAS VECTORIZED
+         remark #15300: LOOP WAS VECTORIZED
          remark #15448: unmasked aligned unit stride loads: 1 
          remark #15450: unmasked unaligned unit stride loads: 2 
          remark #15451: unmasked unaligned unit stride stores: 1 
@@ -195,210 +224,69 @@ LOOP BEGIN at MD.c(18,5)
          remark #25015: Estimate of max trip count of loop=1
       LOOP END
 
-      LOOP BEGIN at MD.c(38,7)
+      LOOP BEGIN at MD.c(27,7)
       <Remainder loop for vectorization>
          remark #25436: completely unrolled by 1  
       LOOP END
    LOOP END
 
-   LOOP BEGIN at MD.c(47,5)
-      remark #15388: vectorization support: reference k[_2] has aligned access
-      remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
-      remark #15305: vectorization support: vector length 2
-      remark #15427: loop was completely unrolled
-      remark #15449: unmasked aligned unit stride stores: 1 
-      remark #15475: --- begin vector cost summary ---
-      remark #15476: scalar cost: 2 
-      remark #15477: vector cost: 1.500 
-      remark #15478: estimated potential speedup: 1.330 
-      remark #15488: --- end vector cost summary ---
-      remark #25436: completely unrolled by 2  
-   LOOP END
-
-   LOOP BEGIN at MD.c(48,5)
-      remark #25084: Preprocess Loopnests: Moving Out Store    [ MD.c(48,21) ]
-      remark #15542: loop was not vectorized: inner loop was already vectorized
+   LOOP BEGIN at MD.c(34,5)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization
+      remark #15346: vector dependence: assumed FLOW dependence between delta_pos[k][l] (38:11) and delta_pos[k][l] (55:13)
+      remark #15346: vector dependence: assumed ANTI dependence between delta_pos[k][l] (55:13) and delta_pos[k][l] (38:11)
       remark #25015: Estimate of max trip count of loop=4096
 
-      LOOP BEGIN at MD.c(49,7)
-         remark #25084: Preprocess Loopnests: Moving Out Store    [ MD.c(56,11) ]
-         remark #25427: Loop Statements Reordered
-         remark #15389: vectorization support: reference delta_r[k] has unaligned access   [ MD.c(53,9) ]
-         remark #15389: vectorization support: reference delta_r[k] has unaligned access   [ MD.c(54,9) ]
-         remark #15389: vectorization support: reference delta_r[k] has unaligned access   [ MD.c(54,9) ]
-         remark #15389: vectorization support: reference delta_r[k] has unaligned access   [ MD.c(55,9) ]
-         remark #15389: vectorization support: reference delta_r[k] has unaligned access   [ MD.c(55,27) ]
-         remark #15381: vectorization support: unaligned access used inside loop body
-         remark #15329: vectorization support: non-unit strided store was emulated for the variable <delta_pos[k][0]>, stride is 3   [ MD.c(50,9) ]
-         remark #15328: vectorization support: non-unit strided load was emulated for the variable <pos[j][0]>, stride is 3   [ MD.c(50,39) ]
-         remark #15329: vectorization support: non-unit strided store was emulated for the variable <delta_pos[k][1]>, stride is 3   [ MD.c(51,9) ]
-         remark #15328: vectorization support: non-unit strided load was emulated for the variable <pos[j][1]>, stride is 3   [ MD.c(51,39) ]
-         remark #15329: vectorization support: non-unit strided store was emulated for the variable <delta_pos[k][2]>, stride is 3   [ MD.c(52,9) ]
-         remark #15328: vectorization support: non-unit strided load was emulated for the variable <pos[j][2]>, stride is 3   [ MD.c(52,39) ]
-         remark #15328: vectorization support: non-unit strided load was emulated for the variable <delta_pos[k][0]>, stride is 3   [ MD.c(54,24) ]
-         remark #15328: vectorization support: non-unit strided load was emulated for the variable <delta_pos[k][0]>, stride is 3   [ MD.c(54,42) ]
-         remark #15328: vectorization support: non-unit strided load was emulated for the variable <delta_pos[k][1]>, stride is 3   [ MD.c(54,60) ]
-         remark #15328: vectorization support: non-unit strided load was emulated for the variable <delta_pos[k][1]>, stride is 3   [ MD.c(54,78) ]
-         remark #15328: vectorization support: non-unit strided load was emulated for the variable <delta_pos[k][2]>, stride is 3   [ MD.c(54,96) ]
-         remark #15328: vectorization support: non-unit strided load was emulated for the variable <delta_pos[k][2]>, stride is 3   [ MD.c(54,114) ]
-         remark #15305: vectorization support: vector length 2
-         remark #15309: vectorization support: normalized vectorization overhead 0.152
-         remark #15300: LOOP WAS VECTORIZED
-         remark #15450: unmasked unaligned unit stride loads: 1 
-         remark #15451: unmasked unaligned unit stride stores: 3 
-         remark #15452: unmasked strided loads: 9 
-         remark #15453: unmasked strided stores: 3 
-         remark #15475: --- begin vector cost summary ---
-         remark #15476: scalar cost: 86 
-         remark #15477: vector cost: 66.000 
-         remark #15478: estimated potential speedup: 1.300 
-         remark #15488: --- end vector cost summary ---
-         remark #25456: Number of Array Refs Scalar Replaced In Loop: 3
-         remark #25015: Estimate of max trip count of loop=2048
-      LOOP END
-
-      LOOP BEGIN at MD.c(49,7)
-      <Remainder loop for vectorization>
-         remark #25456: Number of Array Refs Scalar Replaced In Loop: 1
+      LOOP BEGIN at MD.c(35,7)
+         remark #15344: loop was not vectorized: vector dependence prevents vectorization
+         remark #15346: vector dependence: assumed OUTPUT dependence between f[i][l] (51:13) and f[i][l] (54:13)
+         remark #15346: vector dependence: assumed OUTPUT dependence between f[i][l] (54:13) and f[i][l] (51:13)
+         remark #25456: Number of Array Refs Scalar Replaced In Loop: 19
          remark #25015: Estimate of max trip count of loop=4096
-      LOOP END
-   LOOP END
 
-   LOOP BEGIN at MD.c(65,5)
-   <Distributed chunk1>
-      remark #25426: Loop Distributed (2 way) 
-      remark #25096: Loop Interchange not done due to: Imperfect Loop Nest (Either at Source or due to other Compiler Transformations)
-      remark #25451: Advice: Loop Interchange, if possible, might help loopnest. Suggested Permutation : ( 1 2 ) --> ( 2 1 ) 
-      remark #15542: loop was not vectorized: inner loop was already vectorized
-      remark #25015: Estimate of max trip count of loop=4096
+         LOOP BEGIN at MD.c(37,9)
+            remark #25436: completely unrolled by 3   (pre-vector) 
+         LOOP END
 
-      LOOP BEGIN at MD.c(68,5)
-         remark #25084: Preprocess Loopnests: Moving Out Store    [ MD.c(89,9) ]
-         remark #25084: Preprocess Loopnests: Moving Out Store    [ MD.c(90,9) ]
-         remark #15388: vectorization support: reference radius[j] has aligned access   [ MD.c(69,28) ]
-         remark #15388: vectorization support: reference mass[j] has aligned access   [ MD.c(73,40) ]
-         remark #15388: vectorization support: reference delta_r[k] has aligned access   [ MD.c(73,69) ]
-         remark #15388: vectorization support: reference delta_r[k] has aligned access   [ MD.c(73,82) ]
-         remark #15388: vectorization support: reference delta_r[k] has aligned access   [ MD.c(73,95) ]
-         remark #15388: vectorization support: reference mass[j] has aligned access   [ MD.c(74,40) ]
-         remark #15388: vectorization support: reference delta_r[k] has aligned access   [ MD.c(74,69) ]
-         remark #15388: vectorization support: reference delta_r[k] has aligned access   [ MD.c(74,82) ]
-         remark #15388: vectorization support: reference delta_r[k] has aligned access   [ MD.c(74,95) ]
-         remark #15388: vectorization support: reference mass[j] has aligned access   [ MD.c(75,40) ]
-         remark #15388: vectorization support: reference delta_r[k] has aligned access   [ MD.c(75,69) ]
-         remark #15388: vectorization support: reference delta_r[k] has aligned access   [ MD.c(75,82) ]
-         remark #15388: vectorization support: reference delta_r[k] has aligned access   [ MD.c(75,95) ]
-         remark #15388: vectorization support: reference delta_r[k] has aligned access   [ MD.c(86,27) ]
-         remark #15328: vectorization support: non-unit strided load was emulated for the variable <delta_pos[k][0]>, stride is 3   [ MD.c(73,50) ]
-         remark #15328: vectorization support: non-unit strided load was emulated for the variable <delta_pos[k][1]>, stride is 3   [ MD.c(74,50) ]
-         remark #15328: vectorization support: non-unit strided load was emulated for the variable <delta_pos[k][2]>, stride is 3   [ MD.c(75,50) ]
-         remark #15329: vectorization support: non-unit strided store was emulated for the variable <f[j][0]>, stride is 3   [ MD.c(82,9) ]
-         remark #15328: vectorization support: non-unit strided load was emulated for the variable <f[j][0]>, stride is 3   [ MD.c(82,9) ]
-         remark #15329: vectorization support: non-unit strided store was emulated for the variable <f[j][1]>, stride is 3   [ MD.c(83,9) ]
-         remark #15328: vectorization support: non-unit strided load was emulated for the variable <f[j][1]>, stride is 3   [ MD.c(83,9) ]
-         remark #15329: vectorization support: non-unit strided store was emulated for the variable <f[j][2]>, stride is 3   [ MD.c(84,9) ]
-         remark #15328: vectorization support: non-unit strided load was emulated for the variable <f[j][2]>, stride is 3   [ MD.c(84,9) ]
-         remark #15305: vectorization support: vector length 2
-         remark #15309: vectorization support: normalized vectorization overhead 0.356
-         remark #15355: vectorization support: at (79:9) is double type reduction   [ MD.c(79,9) ]
-         remark #15355: vectorization support: at (80:9) is double type reduction   [ MD.c(80,9) ]
-         remark #15355: vectorization support: at (81:9) is double type reduction   [ MD.c(81,9) ]
-         remark #15355: vectorization support: collisions is int type reduction   [ MD.c(89,9) ]
-         remark #15300: LOOP WAS VECTORIZED
-         remark #15448: unmasked aligned unit stride loads: 15 
-         remark #15452: unmasked strided loads: 6 
-         remark #15453: unmasked strided stores: 3 
-         remark #15475: --- begin vector cost summary ---
-         remark #15476: scalar cost: 212 
-         remark #15477: vector cost: 132.000 
-         remark #15478: estimated potential speedup: 1.600 
-         remark #15486: divides: 3 
-         remark #15487: type converts: 6 
-         remark #15488: --- end vector cost summary ---
-         remark #25015: Estimate of max trip count of loop=2048
+         LOOP BEGIN at MD.c(49,9)
+            remark #25436: completely unrolled by 3   (pre-vector) 
+         LOOP END
       LOOP END
 
-      LOOP BEGIN at MD.c(68,5)
-      <Remainder loop for vectorization>
-         remark #25456: Number of Array Refs Scalar Replaced In Loop: 1
-         remark #25015: Estimate of max trip count of loop=4096
+      LOOP BEGIN at MD.c(68,7)
+         remark #25436: completely unrolled by 3   (pre-vector) 
       LOOP END
-   LOOP END
-
-   LOOP BEGIN at MD.c(97,1)
-      remark #25084: Preprocess Loopnests: Moving Out Store    [ MD.c(97,26) ]
-      remark #15388: vectorization support: reference mass[i] has aligned access   [ MD.c(102,47) ]
-      remark #15388: vectorization support: reference mass[i] has aligned access   [ MD.c(103,47) ]
-      remark #15388: vectorization support: reference mass[i] has aligned access   [ MD.c(104,47) ]
-      remark #15329: vectorization support: non-unit strided store was emulated for the variable <pos[i][0]>, stride is 3   [ MD.c(99,5) ]
-      remark #15328: vectorization support: non-unit strided load was emulated for the variable <pos[i][0]>, stride is 3   [ MD.c(99,17) ]
-      remark #15328: vectorization support: non-unit strided load was emulated for the variable <velo[i][0]>, stride is 3   [ MD.c(99,34) ]
-      remark #15329: vectorization support: non-unit strided store was emulated for the variable <pos[i][1]>, stride is 3   [ MD.c(100,5) ]
-      remark #15328: vectorization support: non-unit strided load was emulated for the variable <pos[i][1]>, stride is 3   [ MD.c(100,17) ]
-      remark #15328: vectorization support: non-unit strided load was emulated for the variable <velo[i][1]>, stride is 3   [ MD.c(100,34) ]
-      remark #15329: vectorization support: non-unit strided store was emulated for the variable <pos[i][2]>, stride is 3   [ MD.c(101,5) ]
-      remark #15328: vectorization support: non-unit strided load was emulated for the variable <pos[i][2]>, stride is 3   [ MD.c(101,17) ]
-      remark #15328: vectorization support: non-unit strided load was emulated for the variable <velo[i][2]>, stride is 3   [ MD.c(101,34) ]
-      remark #15329: vectorization support: non-unit strided store was emulated for the variable <velo[i][0]>, stride is 3   [ MD.c(102,5) ]
-      remark #15328: vectorization support: non-unit strided load was emulated for the variable <velo[i][0]>, stride is 3   [ MD.c(102,18) ]
-      remark #15328: vectorization support: non-unit strided load was emulated for the variable <f[i][0]>, stride is 3   [ MD.c(102,37) ]
-      remark #15329: vectorization support: non-unit strided store was emulated for the variable <velo[i][1]>, stride is 3   [ MD.c(103,5) ]
-      remark #15328: vectorization support: non-unit strided load was emulated for the variable <velo[i][1]>, stride is 3   [ MD.c(103,18) ]
-      remark #15328: vectorization support: non-unit strided load was emulated for the variable <f[i][1]>, stride is 3   [ MD.c(103,37) ]
-      remark #15329: vectorization support: non-unit strided store was emulated for the variable <velo[i][2]>, stride is 3   [ MD.c(104,5) ]
-      remark #15328: vectorization support: non-unit strided load was emulated for the variable <velo[i][2]>, stride is 3   [ MD.c(104,18) ]
-      remark #15328: vectorization support: non-unit strided load was emulated for the variable <f[i][2]>, stride is 3   [ MD.c(104,37) ]
-      remark #15305: vectorization support: vector length 2
-      remark #15300: LOOP WAS VECTORIZED
-      remark #15448: unmasked aligned unit stride loads: 3 
-      remark #15452: unmasked strided loads: 12 
-      remark #15453: unmasked strided stores: 6 
-      remark #15475: --- begin vector cost summary ---
-      remark #15476: scalar cost: 133 
-      remark #15477: vector cost: 112.500 
-      remark #15478: estimated potential speedup: 1.180 
-      remark #15486: divides: 3 
-      remark #15488: --- end vector cost summary ---
-      remark #25015: Estimate of max trip count of loop=2048
    LOOP END
 LOOP END
 
     Report from: Code generation optimizations [cg]
 
-MD.c(29,16):remark #34069: adjacent sparse (strided) loads seem unprofitable to optimize. Details: stride { 24 }, types { F64-V128, F64-V128, F64-V128 }, number of elements { 2 }, select mask { 0x000000007 }.
-MD.c(73,50):remark #34069: adjacent sparse (strided) loads seem unprofitable to optimize. Details: stride { 24 }, types { F64-V128, F64-V128, F64-V128 }, number of elements { 2 }, select mask { 0x000000007 }.
-MD.c(82,9):remark #34069: adjacent sparse (strided) loads seem unprofitable to optimize. Details: stride { 24 }, types { F64-V128, F64-V128, F64-V128 }, number of elements { 2 }, select mask { 0x000000007 }.
-MD.c(84,9):remark #34070: adjacent sparse (strided) stores seem unprofitable to optimize. Details: stride { 24 }, types { F64-V128, F64-V128, F64-V128 }, number of elements { 2 }, select mask { 0x000000007 }.
-MD.c(99,17):remark #34069: adjacent sparse (strided) loads seem unprofitable to optimize. Details: stride { 24 }, types { F64-V128, F64-V128, F64-V128 }, number of elements { 2 }, select mask { 0x000000007 }.
-MD.c(99,34):remark #34069: adjacent sparse (strided) loads seem unprofitable to optimize. Details: stride { 24 }, types { F64-V128, F64-V128, F64-V128 }, number of elements { 2 }, select mask { 0x000000007 }.
-MD.c(100,34):remark #34069: adjacent sparse (strided) loads seem unprofitable to optimize. Details: stride { 24 }, types { F64-V128, F64-V128 }, number of elements { 2 }, select mask { 0x000000003 }.
-MD.c(102,37):remark #34069: adjacent sparse (strided) loads seem unprofitable to optimize. Details: stride { 24 }, types { F64-V128, F64-V128, F64-V128 }, number of elements { 2 }, select mask { 0x000000007 }.
-MD.c(104,5):remark #34070: adjacent sparse (strided) stores seem unprofitable to optimize. Details: stride { 24 }, types { F64-V128, F64-V128, F64-V128 }, number of elements { 2 }, select mask { 0x000000007 }.
-MD.c(50,39):remark #34069: adjacent sparse (strided) loads seem unprofitable to optimize. Details: stride { 24 }, types { F64-V128, F64-V128, F64-V128 }, number of elements { 2 }, select mask { 0x000000007 }.
-MD.c(52,9):remark #34070: adjacent sparse (strided) stores seem unprofitable to optimize. Details: stride { 24 }, types { F64-V128, F64-V128, F64-V128 }, number of elements { 2 }, select mask { 0x000000007 }.
-MD.c(54,24):remark #34069: adjacent sparse (strided) loads seem unprofitable to optimize. Details: stride { 24 }, types { F64-V128, F64-V128 }, number of elements { 2 }, select mask { 0x000000003 }.
+MD.c(24,19):remark #34069: adjacent sparse (strided) loads seem unprofitable to optimize. Details: stride { 24 }, types { F64-V128, F64-V128, F64-V128 }, number of elements { 2 }, select mask { 0x000000007 }.
+MD.c(24,19):remark #34069: adjacent sparse (strided) loads seem unprofitable to optimize. Details: stride { 24 }, types { F64-V128, F64-V128, F64-V128 }, number of elements { 2 }, select mask { 0x000000007 }.
+MD.c(24,19):remark #34069: adjacent sparse (strided) loads seem unprofitable to optimize. Details: stride { 24 }, types { F64-V128, F64-V128, F64-V128 }, number of elements { 2 }, select mask { 0x000000007 }.
+MD.c(24,19):remark #34069: adjacent sparse (strided) loads seem unprofitable to optimize. Details: stride { 24 }, types { F64-V128, F64-V128, F64-V128 }, number of elements { 2 }, select mask { 0x000000007 }.
+MD.c(21,5):remark #34026: call to memset implemented as a call to optimized library version
 MD.c(10,33):remark #34051: REGISTER ALLOCATION : [evolve] MD.c:10
 
     Hardware registers
         Reserved     :    2[ rsp rip]
         Available    :   39[ rax rdx rcx rbx rbp rsi rdi r8-r15 mm0-mm7 zmm0-zmm15]
         Callee-save  :    6[ rbx rbp r12-r15]
-        Assigned     :   31[ rax rdx rcx rbx rbp rsi rdi r8-r15 zmm0-zmm15]
+        Assigned     :   29[ rax rdx rcx rbx rbp rsi rdi r8-r11 r14-r15 zmm0-zmm15]
         
     Routine temporaries
-        Total         :     310
-            Global    :      82
-            Local     :     228
-        Regenerable   :      16
-        Spilled       :      12
+        Total         :     204
+            Global    :      48
+            Local     :     156
+        Regenerable   :      15
+        Spilled       :       4
         
     Routine stack
         Variables     :       0 bytes*
             Reads     :       0 [0.00e+00 ~ 0.0%]
             Writes    :       0 [0.00e+00 ~ 0.0%]
-        Spills        :     112 bytes*
-            Reads     :      13 [2.22e-04 ~ 0.0%]
-            Writes    :      12 [3.33e-04 ~ 0.0%]
+        Spills        :      32 bytes*
+            Reads     :       4 [7.69e-08 ~ 0.0%]
+            Writes    :       4 [7.69e-08 ~ 0.0%]
     
     Notes
     
@@ -420,7 +308,7 @@ Begin optimization report for: second()
 
     Report from: Interprocedural optimizations [ipo]
 
-DEAD STATIC FUNCTION: (second()) control.c(97,1)
+DEAD STATIC FUNCTION: (second()) control.c(96,1)
 
 ===========================================================================
 

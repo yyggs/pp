@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
  <rdmgr>
-  <timestamp type="u64_t">1712392515</timestamp>
-  <hostname type="string">r1i0n8</hostname>
+  <timestamp type="u64_t">1712394001</timestamp>
+  <hostname type="string">r1i0n35</hostname>
   <os type="string">linux</os>
   <product type="string">Intel® VTune™ Profiler 2020 Update 3</product>
   <buildNumber type="s32_t">612611</buildNumber>
@@ -15,8 +15,8 @@
   <CPUStepping type="s32_t">1</CPUStepping>
   <CPUBrandName type="string">Intel(R) Xeon(R) CPU E5-2695 v4 @ 2.10GHz</CPUBrandName>
   <isa type="string">avx2</isa>
-  <collectionTimeBegin type="u64_t">1712392515</collectionTimeBegin>
-  <collectionTimeEnd type="u64_t">1712392556</collectionTimeEnd>
+  <collectionTimeBegin type="u64_t">1712394001</collectionTimeBegin>
+  <collectionTimeEnd type="u64_t">1712394047</collectionTimeEnd>
   <variables>
    <at type="string">hs</at>
   </variables>

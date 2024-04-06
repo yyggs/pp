@@ -64,7 +64,7 @@ void evolve(int count,double dt){
         double force_y = G * mass[i] * mass[j] * delta_pos[k][1] / (delta_r[k] * delta_r[k] * delta_r[k]);
         double force_z = G * mass[i] * mass[j] * delta_pos[k][2] / (delta_r[k] * delta_r[k] * delta_r[k]);
         
-        int sign = (delta_r[k] >= size) ? -1 : 1;
+        int sign = 2*(delta_r[k] < size) - 1;
         
         f[i][0] += force_x * sign;
         f[i][1] += force_y * sign;
