@@ -1,4 +1,4 @@
-SRC=oldMD.c control.c util.c 
+SRC=MD.c control.c util.c 
 OBJ=$(SRC:.c=.o)
 CC=icc
 # CFLAGS= -O3  -ipo 
