@@ -24,15 +24,11 @@
 
 enum{ Xcoord=0, Ycoord, Zcoord, Ndim };
       
-DEF double pos[Nbody][Ndim];
-DEF double velo[Nbody][Ndim];
-DEF double f[Nbody][Ndim];
-DEF double vis[Nbody];
-DEF double mass[Nbody];
-DEF double radius[Nbody];
-DEF double delta_pos[Npair][3];
-DEF double r[Nbody];
-DEF double delta_r[Npair];
+DEF double *pos[Ndim], *velo[Ndim];
+DEF double *f[Ndim], *vis, *mass, *radius;
+DEF double *delta_pos[3];
+DEF double *r;
+DEF double *delta_r;
 DEF double wind[Ndim];
 DEF int collisions;
 

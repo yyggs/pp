@@ -6,7 +6,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <sys/time.h>
-#include <memory.h>
+
 #define DECL
 #include "coord.h"
 
@@ -27,18 +27,25 @@ int main(int argc, char *argv[]){
   if( argc > 1 ){
     Nstep=atoi(argv[1]);
   }
-  wind[0] = 0.9;
-  wind[1] = 0.4;
-  wind[2] = 0.0;
+  wind[Xcoord] = 0.9;
+  wind[Ycoord] = 0.4;
+  wind[Zcoord] = 0.0;
   /* set up multi dimensional arrays */
-  memset(pos, 0, sizeof(pos));
-  memset(velo, 0, sizeof(velo));
-  memset(f, 0, sizeof(f));
-  memset(vis, 0, sizeof(vis));
-  memset(mass, 0, sizeof(mass));
-  memset(radius, 0, sizeof(radius));
-  memset(delta_pos, 0, sizeof(delta_pos));
-  memset(r, 0, sizeof(r));
+  r = calloc(Nbody,sizeof(double));
+  delta_r = calloc(Nbody*Nbody,sizeof(double));
+  mass = calloc(Nbody,sizeof(double));
+  radius = calloc(Nbody,sizeof(double));
+  vis = calloc(Nbody,sizeof(double));
+  f[0] = calloc(Ndim*Nbody,sizeof(double));
+  pos[0] = calloc(Ndim*Nbody,sizeof(double));
+  velo[0] = calloc(Ndim*Nbody,sizeof(double));
+  delta_pos[0] = calloc(Ndim*Nbody*Nbody,sizeof(double));
+  for(i=1;i<Ndim;i++){
+    f[i] = f[0] + i * Nbody;
+    pos[i] = pos[0] + i * Nbody;
+    velo[i] = velo[0] + i * Nbody;
+    delta_pos[i] = delta_pos[0] + i*Nbody*Nbody;
+  }
 
 /* read the initial data from a file */
 
@@ -53,8 +60,8 @@ int main(int argc, char *argv[]){
   for(i=0;i<Nbody;i++){
     fscanf(in,"%16le%16le%16le%16le%16le%16le%16le%16le%16le\n",
       mass+i,radius+i,vis+i,
-      &pos[i][Xcoord], &pos[i][Ycoord], &pos[i][Zcoord],
-      &velo[i][Xcoord], &velo[i][Ycoord], &velo[i][Zcoord]);
+      &pos[Xcoord][i], &pos[Ycoord][i], &pos[Zcoord][i],
+      &velo[Xcoord][i], &velo[Ycoord][i], &velo[Zcoord][i]);
   }
   fclose(in);
 
@@ -82,8 +89,8 @@ int main(int argc, char *argv[]){
       for(i=0;i<Nbody;i++){
 	fprintf(out,"%16.8E%16.8E%16.8E%16.8E%16.8E%16.8E%16.8E%16.8E%16.8E\n",
 		mass[i],radius[i],vis[i],
-		pos[i][Xcoord], pos[i][Ycoord], pos[i][Zcoord],
-		velo[i][Xcoord], velo[i][Ycoord], velo[i][Zcoord]);
+		pos[Xcoord][i], pos[Ycoord][i], pos[Zcoord][i],
+		velo[Xcoord][i], velo[Ycoord][i], velo[Zcoord][i]);
       }
       fclose(out);
   }
@@ -101,3 +108,4 @@ double second()
         i = gettimeofday(&tp,&tzp);
         return ( (double) tp.tv_sec + (double) tp.tv_usec * 1.e-6 );
 }
+

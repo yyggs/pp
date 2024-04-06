@@ -15,6 +15,8 @@
 # We use the "standard" QoS as our runtime is less than 4 days
 #SBATCH --qos=standard
 
+module load oneapi
+module load compiler
 module load intel-20.4/compilers
 module load intel-20.4/vtune
 module load intel-20.4/advisor
@@ -31,7 +33,3 @@ advixe-cl -collect survey -project-dir opt_results -- ./MD
 advixe-cl -collect tripcounts -flop -project-dir opt_results -- ./MD
 advixe-cl -collect roofline -project-dir opt_results -- ./MD
 
-mkdir -p orig_results
-advixe-cl -collect survey -project-dir orig_results -- ./MD
-advixe-cl -collect tripcounts -flop -project-dir orig_results -- ./MD
-advixe-cl -collect roofline -project-dir orig_results -- ./MD
