@@ -1,0 +1,25 @@
+Loading compiler/latest
+  Loading requirement: tbb/latest compiler-rt/latest oclfpga/latest
+Loading intel-20.4/compilers
+  Loading requirement: intel-license gcc/10.2.0 intel-20.4/cc intel-20.4/fc
+vtune: Fatal error: Cannot find the analysis type. Check input parameters or reinstall the product. Available analysis types:
+	performance-snapshot
+	hotspots
+	anomaly-detection
+	memory-consumption
+	uarch-exploration
+	memory-access
+	threading
+	hpc-performance
+	io
+	gpu-offload
+	gpu-hotspots
+	fpga-interaction
+	system-overview
+	throttling
+	platform-profiler
+	graphics-rendering
+	cpugpu-concurrency
+	tsx-exploration
+	tsx-hotspots
+	sgx-hotspots
