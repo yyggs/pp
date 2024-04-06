@@ -2,7 +2,7 @@ SRC=MD.c control.c util.c
 OBJ=$(SRC:.c=.o)
 CC=icc
 # CFLAGS= -O3  -ipo 
-CFLAGS= -O3 -ipo #-qopt-report=5 -qopt-report-file=report.txt
+CFLAGS= -fast
 
 all: MD
 

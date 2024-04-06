@@ -12,10 +12,10 @@
 module load oneapi
 module load compiler
 module load intel-20.4/compilers
-module load intel-20.4/vtune
+# module load intel-20.4/vtune
 # Run the parallel program
-# ./MD
+./MD
 
-vtune -collect=uarch-exploration -r vtune_results ./MD
+#vtune -collect=uarch-exploration -r vtune_results ./MD
 
 

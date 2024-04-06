@@ -28,6 +28,7 @@ void evolve(int count,double dt){
           f[i][dim] = -vis[i] * velo[i][dim] - vis[i] * wind[dim] - G * mass[i] * M_central * pos[i][dim] / (r[i] * r[i] * r[i]);
       }
     }
+
     /* calculate pairwise separation of the particles */
     /* calculate norm of separation vector */
     k = 0;
@@ -40,27 +41,18 @@ void evolve(int count,double dt){
         }
         delta_r = sqrt(delta_r);
     
-  /*
-  * add pairwise forces.
-  */
+        
+        // add pairwise forces.
         size = radius[i] + radius[j];
         have_collided = 0;
 
+        int sign = 2 * (delta_r < size) - 1;
         for(l=0;l<Ndim;l++){
-          if(delta_r >= size){
-            f[i][l] -= G * mass[i] * mass[j] * delta_pos[k][l] / (delta_r * delta_r * delta_r);
-            f[j][l] += G * mass[i] * mass[j] * delta_pos[k][l] / (delta_r * delta_r * delta_r);
-          }else{
-            f[i][l] += G * mass[i] * mass[j] * delta_pos[k][l] / (delta_r * delta_r * delta_r);
-            f[j][l] -= G * mass[i] * mass[j] * delta_pos[k][l] / (delta_r * delta_r * delta_r);
-            collisions++;
-          }
-         }
-        if (have_collided == 1)
-        {
-          collisions++;
+          f[i][l] += G * mass[i] * mass[j] * delta_pos[k][l] / (delta_r * delta_r * delta_r) * sign;
+          f[j][l] -= G * mass[i] * mass[j] * delta_pos[k][l] / (delta_r * delta_r * delta_r) * sign;
         }
-        
+        have_collided |= (delta_r < size);
+        collisions += have_collided;
         k++;
       }
 

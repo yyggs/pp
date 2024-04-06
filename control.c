@@ -30,7 +30,9 @@ int main(int argc, char *argv[]){
   wind[0] = 0.9;
   wind[1] = 0.4;
   wind[2] = 0.0;
+
   /* set up multi dimensional arrays */
+  
   memset(pos, 0, sizeof(pos));
   memset(velo, 0, sizeof(velo));
   memset(f, 0, sizeof(f));
