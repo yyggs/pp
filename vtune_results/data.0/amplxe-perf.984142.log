@@ -1,0 +1,68 @@
+Using CPUID GenuineIntel-6-4F-1
+Compression enabled, disabling build id collection at the end of the session.
+nr_cblocks: 0
+affinity: SYS
+mmap flush: 1
+comp level: 1
+Problems creating module maps, continuing anyway...
+WARNING: Kernel address maps (/proc/{kallsyms,modules}) are restricted,
+check /proc/sys/kernel/kptr_restrict and /proc/sys/kernel/perf_event_paranoid.
+
+Samples in kernel functions may not be resolved if a suitable vmlinux
+file is not found in the buildid cache or in the vmlinux path.
+
+Samples in kernel modules won't be resolved at all.
+
+If some relocation was applied (e.g. kexec) symbols may be misresolved
+even with a suitable vmlinux or kallsyms file.
+
+mmap size 528384B
+thread 0 monitor: 0-71 allowed: any
+Couldn't record kernel reference relocation symbol
+Symbol resolution may be skewed if relocation was used (e.g. kexec).
+Check /proc/kallsyms permission or run as root.
+couldn't open /proc/1/task/1/maps
+couldn't open /proc/107649/task/107649/maps
+couldn't open /proc/1721/task/1721/maps
+couldn't open /proc/1778/task/1778/maps
+couldn't open /proc/2298/task/2298/maps
+couldn't open /proc/2311/task/2311/maps
+couldn't open /proc/2323/task/2323/maps
+couldn't open /proc/2329/task/2329/maps
+couldn't open /proc/2348/task/2348/maps
+couldn't open /proc/2433/task/2433/maps
+couldn't open /proc/2548/task/2548/maps
+couldn't open /proc/2845/task/2845/maps
+couldn't open /proc/2849/task/2849/maps
+couldn't open /proc/2852/task/2852/maps
+couldn't open /proc/2864/task/2864/maps
+couldn't open /proc/2876/task/2876/maps
+couldn't open /proc/2880/task/2880/maps
+couldn't open /proc/2881/task/2881/maps
+couldn't open /proc/2907/task/2907/maps
+couldn't open /proc/3174/task/3174/maps
+couldn't open /proc/3186/task/3186/maps
+couldn't open /proc/3289/task/3289/maps
+couldn't open /proc/3295/task/3295/maps
+couldn't open /proc/3303/task/3303/maps
+couldn't open /proc/3310/task/3310/maps
+couldn't open /proc/3311/task/3311/maps
+couldn't open /proc/3319/task/3319/maps
+couldn't open /proc/3320/task/3320/maps
+couldn't open /proc/3321/task/3321/maps
+couldn't open /proc/3323/task/3323/maps
+couldn't open /proc/3931/task/3931/maps
+couldn't open /proc/3938/task/3938/maps
+couldn't open /proc/3939/task/3939/maps
+couldn't open /proc/3958/task/3958/maps
+couldn't open /proc/3959/task/3959/maps
+couldn't open /proc/3960/task/3960/maps
+couldn't open /proc/980436/task/980436/maps
+couldn't open /proc/983858/task/983858/maps
+couldn't open /proc/983862/task/983862/maps
+couldn't open /proc/983910/task/983910/maps
+cmd_pipe: /dev/shm/s2484724_5594023/amplxe-tmp-s2484724/perf-pipe-984069-2847266692660990
+
+984143:perf-sync:ready:SYS=1355749804967931
+[ perf record: Woken up 1 times to write data ]
+[ perf record: Captured and wrote 0.338 MB /dev/shm/s2484724_5594023/amplxe-tmp-s2484724/amplxe-res-984069-2847263748638941/data.0/temp.dryrun.perf, compressed (original 0.017 MB, ratio is 5.180) ]

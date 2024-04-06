@@ -1,0 +1,141 @@
+Using CPUID GenuineIntel-6-4F-1
+Compression enabled, disabling build id collection at the end of the session.
+path: /dev/shm/s2484724_5594023/amplxe-tmp-s2484724/amplxe-res-984069-2847263748638941/data.0
+basename: system-wide.perf
+nr_cblocks: 0
+affinity: SYS
+mmap flush: 1
+comp level: 1
+Problems creating module maps, continuing anyway...
+WARNING: Kernel address maps (/proc/{kallsyms,modules}) are restricted,
+check /proc/sys/kernel/kptr_restrict and /proc/sys/kernel/perf_event_paranoid.
+
+Samples in kernel functions may not be resolved if a suitable vmlinux
+file is not found in the buildid cache or in the vmlinux path.
+
+Samples in kernel modules won't be resolved at all.
+
+If some relocation was applied (e.g. kexec) symbols may be misresolved
+even with a suitable vmlinux or kallsyms file.
+
+mmap size 528384B
+thread 0 monitor: 0 allowed: 0
+thread 1 monitor: 1 allowed: 1
+thread 2 monitor: 2 allowed: 2
+thread 3 monitor: 3 allowed: 3
+thread 4 monitor: 4 allowed: 4
+thread 5 monitor: 5 allowed: 5
+thread 6 monitor: 6 allowed: 6
+thread 7 monitor: 7 allowed: 7
+thread 8 monitor: 8 allowed: 8
+thread 9 monitor: 9 allowed: 9
+thread 10 monitor: 10 allowed: 10
+thread 11 monitor: 11 allowed: 11
+thread 12 monitor: 12 allowed: 12
+thread 13 monitor: 13 allowed: 13
+thread 14 monitor: 14 allowed: 14
+thread 15 monitor: 15 allowed: 15
+thread 16 monitor: 16 allowed: 16
+thread 17 monitor: 17 allowed: 17
+thread 18 monitor: 18 allowed: 18
+thread 19 monitor: 19 allowed: 19
+thread 20 monitor: 20 allowed: 20
+thread 21 monitor: 21 allowed: 21
+thread 22 monitor: 22 allowed: 22
+thread 23 monitor: 23 allowed: 23
+thread 24 monitor: 24 allowed: 24
+thread 25 monitor: 25 allowed: 25
+thread 26 monitor: 26 allowed: 26
+thread 27 monitor: 27 allowed: 27
+thread 28 monitor: 28 allowed: 28
+thread 29 monitor: 29 allowed: 29
+thread 30 monitor: 30 allowed: 30
+thread 31 monitor: 31 allowed: 31
+thread 32 monitor: 32 allowed: 32
+thread 33 monitor: 33 allowed: 33
+thread 34 monitor: 34 allowed: 34
+thread 35 monitor: 35 allowed: 35
+thread 36 monitor: 36 allowed: 36
+thread 37 monitor: 37 allowed: 37
+thread 38 monitor: 38 allowed: 38
+thread 39 monitor: 39 allowed: 39
+thread 40 monitor: 40 allowed: 40
+thread 41 monitor: 41 allowed: 41
+thread 42 monitor: 42 allowed: 42
+thread 43 monitor: 43 allowed: 43
+thread 44 monitor: 44 allowed: 44
+thread 45 monitor: 45 allowed: 45
+thread 46 monitor: 46 allowed: 46
+thread 47 monitor: 47 allowed: 47
+thread 48 monitor: 48 allowed: 48
+thread 49 monitor: 49 allowed: 49
+thread 50 monitor: 50 allowed: 50
+thread 51 monitor: 51 allowed: 51
+thread 52 monitor: 52 allowed: 52
+thread 53 monitor: 53 allowed: 53
+thread 54 monitor: 54 allowed: 54
+thread 55 monitor: 55 allowed: 55
+thread 56 monitor: 56 allowed: 56
+thread 57 monitor: 57 allowed: 57
+thread 58 monitor: 58 allowed: 58
+thread 59 monitor: 59 allowed: 59
+thread 60 monitor: 60 allowed: 60
+thread 61 monitor: 61 allowed: 61
+thread 62 monitor: 62 allowed: 62
+thread 63 monitor: 63 allowed: 63
+thread 64 monitor: 64 allowed: 64
+thread 65 monitor: 65 allowed: 65
+thread 66 monitor: 66 allowed: 66
+thread 67 monitor: 67 allowed: 67
+thread 68 monitor: 68 allowed: 68
+thread 69 monitor: 69 allowed: 69
+thread 70 monitor: 70 allowed: 70
+thread 71 monitor: 71 allowed: 71
+Couldn't record kernel reference relocation symbol
+Symbol resolution may be skewed if relocation was used (e.g. kexec).
+Check /proc/kallsyms permission or run as root.
+couldn't open /proc/1/task/1/maps
+couldn't open /proc/107649/task/107649/maps
+couldn't open /proc/1721/task/1721/maps
+couldn't open /proc/1778/task/1778/maps
+couldn't open /proc/2298/task/2298/maps
+couldn't open /proc/2311/task/2311/maps
+couldn't open /proc/2323/task/2323/maps
+couldn't open /proc/2329/task/2329/maps
+couldn't open /proc/2348/task/2348/maps
+couldn't open /proc/2433/task/2433/maps
+couldn't open /proc/2548/task/2548/maps
+couldn't open /proc/2845/task/2845/maps
+couldn't open /proc/2849/task/2849/maps
+couldn't open /proc/2852/task/2852/maps
+couldn't open /proc/2864/task/2864/maps
+couldn't open /proc/2876/task/2876/maps
+couldn't open /proc/2880/task/2880/maps
+couldn't open /proc/2881/task/2881/maps
+couldn't open /proc/2907/task/2907/maps
+couldn't open /proc/3174/task/3174/maps
+couldn't open /proc/3186/task/3186/maps
+couldn't open /proc/3289/task/3289/maps
+couldn't open /proc/3295/task/3295/maps
+couldn't open /proc/3303/task/3303/maps
+couldn't open /proc/3310/task/3310/maps
+couldn't open /proc/3311/task/3311/maps
+couldn't open /proc/3319/task/3319/maps
+couldn't open /proc/3320/task/3320/maps
+couldn't open /proc/3321/task/3321/maps
+couldn't open /proc/3323/task/3323/maps
+couldn't open /proc/3931/task/3931/maps
+couldn't open /proc/3938/task/3938/maps
+couldn't open /proc/3939/task/3939/maps
+couldn't open /proc/3958/task/3958/maps
+couldn't open /proc/3959/task/3959/maps
+couldn't open /proc/3960/task/3960/maps
+couldn't open /proc/980436/task/980436/maps
+couldn't open /proc/983858/task/983858/maps
+couldn't open /proc/983862/task/983862/maps
+couldn't open /proc/983910/task/983910/maps
+cmd_pipe: /dev/shm/s2484724_5594023/amplxe-tmp-s2484724/perf-pipe-984069-2847268334724813
+
+984153:perf-sync:ready:SYS=1355750620975886
+[ perf record: Woken up 30044 times to write data ]
+[ perf record: Captured and wrote 1.862 MB /dev/shm/s2484724_5594023/amplxe-tmp-s2484724/amplxe-res-984069-2847263748638941/data.0, compressed (original 7.505 MB, ratio is 5.127) ]

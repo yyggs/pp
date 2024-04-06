@@ -16,6 +16,6 @@ module load intel-20.4/vtune
 # Run the parallel program
 # ./MD
 
-vtune -collect=microarchitecture-exploration -r vtune-hotspots ./MD
+vtune -collect=uarch-exploration -r vtune_results ./MD
 
 

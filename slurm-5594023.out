@@ -1,0 +1,1186 @@
+Loading compiler/latest
+  Loading requirement: tbb/latest compiler-rt/latest oclfpga/latest
+Loading intel-20.4/compilers
+  Loading requirement: intel-license gcc/10.2.0 intel-20.4/cc intel-20.4/fc
+vtune: Warning: Access to /proc/kallsyms file is limited. Consider changing /proc/sys/kernel/kptr_restrict to 0 to enable resolution of OS kernel and kernel module symbols.
+vtune: Warning: To profile kernel modules during the session, make sure they are available in the /lib/modules/kernel_version/ location.
+vtune: Collection started. To stop the collection, either press CTRL-C or enter from another console window: vtune -r /mnt/lustre/e1000/home/m23oc/m23oc/s2484724/MD/C/vtune_results -command stop.
+timestep 1
+collisions 0
+timestep 2
+collisions 0
+timestep 3
+collisions 0
+timestep 4
+collisions 0
+timestep 5
+collisions 0
+timestep 6
+collisions 0
+timestep 7
+collisions 0
+timestep 8
+collisions 0
+timestep 9
+collisions 0
+timestep 10
+collisions 0
+timestep 11
+collisions 0
+timestep 12
+collisions 0
+timestep 13
+collisions 0
+timestep 14
+collisions 0
+timestep 15
+collisions 0
+timestep 16
+collisions 0
+timestep 17
+collisions 0
+timestep 18
+collisions 0
+timestep 19
+collisions 0
+timestep 20
+collisions 0
+timestep 21
+collisions 0
+timestep 22
+collisions 0
+timestep 23
+collisions 0
+timestep 24
+collisions 0
+timestep 25
+collisions 0
+timestep 26
+collisions 0
+timestep 27
+collisions 0
+timestep 28
+collisions 0
+timestep 29
+collisions 0
+timestep 30
+collisions 0
+timestep 31
+collisions 0
+timestep 32
+collisions 0
+timestep 33
+collisions 0
+timestep 34
+collisions 0
+timestep 35
+collisions 0
+timestep 36
+collisions 0
+timestep 37
+collisions 0
+timestep 38
+collisions 0
+timestep 39
+collisions 0
+timestep 40
+collisions 0
+timestep 41
+collisions 0
+timestep 42
+collisions 0
+timestep 43
+collisions 0
+timestep 44
+collisions 0
+timestep 45
+collisions 0
+timestep 46
+collisions 0
+timestep 47
+collisions 0
+timestep 48
+collisions 0
+timestep 49
+collisions 0
+timestep 50
+collisions 0
+timestep 51
+collisions 0
+timestep 52
+collisions 0
+timestep 53
+collisions 0
+timestep 54
+collisions 0
+timestep 55
+collisions 0
+timestep 56
+collisions 0
+timestep 57
+collisions 0
+timestep 58
+collisions 0
+timestep 59
+collisions 0
+timestep 60
+collisions 0
+timestep 61
+collisions 0
+timestep 62
+collisions 0
+timestep 63
+collisions 0
+timestep 64
+collisions 0
+timestep 65
+collisions 0
+timestep 66
+collisions 0
+timestep 67
+collisions 0
+timestep 68
+collisions 0
+timestep 69
+collisions 0
+timestep 70
+collisions 0
+timestep 71
+collisions 0
+timestep 72
+collisions 0
+timestep 73
+collisions 0
+timestep 74
+collisions 0
+timestep 75
+collisions 0
+timestep 76
+collisions 0
+timestep 77
+collisions 0
+timestep 78
+collisions 0
+timestep 79
+collisions 0
+timestep 80
+collisions 0
+timestep 81
+collisions 0
+timestep 82
+collisions 0
+timestep 83
+collisions 0
+timestep 84
+collisions 0
+timestep 85
+collisions 0
+timestep 86
+collisions 0
+timestep 87
+collisions 0
+timestep 88
+collisions 0
+timestep 89
+collisions 0
+timestep 90
+collisions 0
+timestep 91
+collisions 0
+timestep 92
+collisions 0
+timestep 93
+collisions 0
+timestep 94
+collisions 0
+timestep 95
+collisions 0
+timestep 96
+collisions 0
+timestep 97
+collisions 0
+timestep 98
+collisions 0
+timestep 99
+collisions 0
+timestep 100
+collisions 0
+100 timesteps took 8.513236 seconds
+collisions 0
+timestep 1
+collisions 0
+timestep 2
+collisions 0
+timestep 3
+collisions 0
+timestep 4
+collisions 0
+timestep 5
+collisions 0
+timestep 6
+collisions 0
+timestep 7
+collisions 0
+timestep 8
+collisions 0
+timestep 9
+collisions 0
+timestep 10
+collisions 0
+timestep 11
+collisions 0
+timestep 12
+collisions 0
+timestep 13
+collisions 0
+timestep 14
+collisions 0
+timestep 15
+collisions 0
+timestep 16
+collisions 0
+timestep 17
+collisions 0
+timestep 18
+collisions 0
+timestep 19
+collisions 0
+timestep 20
+collisions 0
+timestep 21
+collisions 0
+timestep 22
+collisions 0
+timestep 23
+collisions 0
+timestep 24
+collisions 0
+timestep 25
+collisions 0
+timestep 26
+collisions 0
+timestep 27
+collisions 0
+timestep 28
+collisions 0
+timestep 29
+collisions 0
+timestep 30
+collisions 0
+timestep 31
+collisions 0
+timestep 32
+collisions 0
+timestep 33
+collisions 0
+timestep 34
+collisions 0
+timestep 35
+collisions 0
+timestep 36
+collisions 0
+timestep 37
+collisions 0
+timestep 38
+collisions 0
+timestep 39
+collisions 0
+timestep 40
+collisions 0
+timestep 41
+collisions 0
+timestep 42
+collisions 0
+timestep 43
+collisions 0
+timestep 44
+collisions 0
+timestep 45
+collisions 0
+timestep 46
+collisions 0
+timestep 47
+collisions 0
+timestep 48
+collisions 0
+timestep 49
+collisions 0
+timestep 50
+collisions 0
+timestep 51
+collisions 0
+timestep 52
+collisions 0
+timestep 53
+collisions 0
+timestep 54
+collisions 0
+timestep 55
+collisions 0
+timestep 56
+collisions 0
+timestep 57
+collisions 0
+timestep 58
+collisions 0
+timestep 59
+collisions 3
+timestep 60
+collisions 9
+timestep 61
+collisions 15
+timestep 62
+collisions 1242
+timestep 63
+collisions 2469
+timestep 64
+collisions 3696
+timestep 65
+collisions 4923
+timestep 66
+collisions 6150
+timestep 67
+collisions 7377
+timestep 68
+collisions 8604
+timestep 69
+collisions 9831
+timestep 70
+collisions 11058
+timestep 71
+collisions 12285
+timestep 72
+collisions 13512
+timestep 73
+collisions 14742
+timestep 74
+collisions 15972
+timestep 75
+collisions 17202
+timestep 76
+collisions 18432
+timestep 77
+collisions 19662
+timestep 78
+collisions 20892
+timestep 79
+collisions 22122
+timestep 80
+collisions 23352
+timestep 81
+collisions 24579
+timestep 82
+collisions 25806
+timestep 83
+collisions 25815
+timestep 84
+collisions 25824
+timestep 85
+collisions 25833
+timestep 86
+collisions 25842
+timestep 87
+collisions 25851
+timestep 88
+collisions 25860
+timestep 89
+collisions 25869
+timestep 90
+collisions 25878
+timestep 91
+collisions 25887
+timestep 92
+collisions 25896
+timestep 93
+collisions 25905
+timestep 94
+collisions 25914
+timestep 95
+collisions 25926
+timestep 96
+collisions 25938
+timestep 97
+collisions 25947
+timestep 98
+collisions 25956
+timestep 99
+collisions 25965
+timestep 100
+collisions 25974
+100 timesteps took 8.481168 seconds
+collisions 25983
+timestep 1
+collisions 25983
+timestep 2
+collisions 25992
+timestep 3
+collisions 25998
+timestep 4
+collisions 26004
+timestep 5
+collisions 26007
+timestep 6
+collisions 26010
+timestep 7
+collisions 26013
+timestep 8
+collisions 26016
+timestep 9
+collisions 26019
+timestep 10
+collisions 26022
+timestep 11
+collisions 26025
+timestep 12
+collisions 26028
+timestep 13
+collisions 26031
+timestep 14
+collisions 26034
+timestep 15
+collisions 26037
+timestep 16
+collisions 26049
+timestep 17
+collisions 26619
+timestep 18
+collisions 27633
+timestep 19
+collisions 28857
+timestep 20
+collisions 30081
+timestep 21
+collisions 31308
+timestep 22
+collisions 32535
+timestep 23
+collisions 33762
+timestep 24
+collisions 34989
+timestep 25
+collisions 36219
+timestep 26
+collisions 37449
+timestep 27
+collisions 38679
+timestep 28
+collisions 39912
+timestep 29
+collisions 41145
+timestep 30
+collisions 42378
+timestep 31
+collisions 43617
+timestep 32
+collisions 44862
+timestep 33
+collisions 46734
+timestep 34
+collisions 49191
+timestep 35
+collisions 51648
+timestep 36
+collisions 54105
+timestep 37
+collisions 56541
+timestep 38
+collisions 58467
+timestep 39
+collisions 60018
+timestep 40
+collisions 61254
+timestep 41
+collisions 62487
+timestep 42
+collisions 63720
+timestep 43
+collisions 64953
+timestep 44
+collisions 66186
+timestep 45
+collisions 67419
+timestep 46
+collisions 68649
+timestep 47
+collisions 69876
+timestep 48
+collisions 71103
+timestep 49
+collisions 72330
+timestep 50
+collisions 73557
+timestep 51
+collisions 74784
+timestep 52
+collisions 76011
+timestep 53
+collisions 77238
+timestep 54
+collisions 78459
+timestep 55
+collisions 79674
+timestep 56
+collisions 80409
+timestep 57
+collisions 80445
+timestep 58
+collisions 80451
+timestep 59
+collisions 80595
+timestep 60
+collisions 80931
+timestep 61
+collisions 81495
+timestep 62
+collisions 82293
+timestep 63
+collisions 83379
+timestep 64
+collisions 84606
+timestep 65
+collisions 85833
+timestep 66
+collisions 87060
+timestep 67
+collisions 88293
+timestep 68
+collisions 89526
+timestep 69
+collisions 90759
+timestep 70
+collisions 91992
+timestep 71
+collisions 93225
+timestep 72
+collisions 94458
+timestep 73
+collisions 95694
+timestep 74
+collisions 96930
+timestep 75
+collisions 98166
+timestep 76
+collisions 99399
+timestep 77
+collisions 100632
+timestep 78
+collisions 101856
+timestep 79
+collisions 102906
+timestep 80
+collisions 103845
+timestep 81
+collisions 104715
+timestep 82
+collisions 105378
+timestep 83
+collisions 105924
+timestep 84
+collisions 106446
+timestep 85
+collisions 107037
+timestep 86
+collisions 107835
+timestep 87
+collisions 108864
+timestep 88
+collisions 110043
+timestep 89
+collisions 111264
+timestep 90
+collisions 112494
+timestep 91
+collisions 113724
+timestep 92
+collisions 114954
+timestep 93
+collisions 116187
+timestep 94
+collisions 117420
+timestep 95
+collisions 118680
+timestep 96
+collisions 120033
+timestep 97
+collisions 121524
+timestep 98
+collisions 123093
+timestep 99
+collisions 124806
+timestep 100
+collisions 126603
+100 timesteps took 8.487916 seconds
+collisions 128529
+timestep 1
+collisions 128529
+timestep 2
+collisions 130491
+timestep 3
+collisions 132492
+timestep 4
+collisions 134403
+timestep 5
+collisions 136242
+timestep 6
+collisions 137874
+timestep 7
+collisions 139287
+timestep 8
+collisions 140583
+timestep 9
+collisions 141825
+timestep 10
+collisions 143052
+timestep 11
+collisions 144279
+timestep 12
+collisions 145485
+timestep 13
+collisions 146619
+timestep 14
+collisions 147648
+timestep 15
+collisions 148590
+timestep 16
+collisions 149463
+timestep 17
+collisions 150201
+timestep 18
+collisions 150783
+timestep 19
+collisions 151197
+timestep 20
+collisions 151497
+timestep 21
+collisions 151665
+timestep 22
+collisions 151761
+timestep 23
+collisions 151794
+timestep 24
+collisions 151824
+timestep 25
+collisions 151920
+timestep 26
+collisions 152124
+timestep 27
+collisions 152430
+timestep 28
+collisions 152817
+timestep 29
+collisions 153249
+timestep 30
+collisions 153732
+timestep 31
+collisions 154257
+timestep 32
+collisions 154827
+timestep 33
+collisions 155442
+timestep 34
+collisions 156087
+timestep 35
+collisions 156711
+timestep 36
+collisions 157311
+timestep 37
+collisions 157854
+timestep 38
+collisions 158328
+timestep 39
+collisions 158733
+timestep 40
+collisions 159012
+timestep 41
+collisions 159162
+timestep 42
+collisions 159243
+timestep 43
+collisions 159288
+timestep 44
+collisions 159303
+timestep 45
+collisions 159315
+timestep 46
+collisions 159327
+timestep 47
+collisions 159333
+timestep 48
+collisions 159336
+timestep 49
+collisions 159339
+timestep 50
+collisions 159342
+timestep 51
+collisions 159345
+timestep 52
+collisions 159351
+timestep 53
+collisions 159357
+timestep 54
+collisions 159363
+timestep 55
+collisions 159369
+timestep 56
+collisions 159375
+timestep 57
+collisions 159381
+timestep 58
+collisions 159390
+timestep 59
+collisions 159399
+timestep 60
+collisions 159408
+timestep 61
+collisions 159417
+timestep 62
+collisions 159426
+timestep 63
+collisions 159441
+timestep 64
+collisions 159459
+timestep 65
+collisions 159477
+timestep 66
+collisions 159501
+timestep 67
+collisions 159534
+timestep 68
+collisions 159567
+timestep 69
+collisions 159600
+timestep 70
+collisions 159639
+timestep 71
+collisions 159681
+timestep 72
+collisions 159729
+timestep 73
+collisions 159789
+timestep 74
+collisions 159867
+timestep 75
+collisions 159948
+timestep 76
+collisions 160047
+timestep 77
+collisions 160152
+timestep 78
+collisions 160263
+timestep 79
+collisions 160383
+timestep 80
+collisions 160518
+timestep 81
+collisions 160665
+timestep 82
+collisions 160815
+timestep 83
+collisions 160968
+timestep 84
+collisions 161130
+timestep 85
+collisions 161292
+timestep 86
+collisions 161463
+timestep 87
+collisions 161646
+timestep 88
+collisions 161829
+timestep 89
+collisions 162024
+timestep 90
+collisions 162219
+timestep 91
+collisions 162411
+timestep 92
+collisions 162615
+timestep 93
+collisions 162825
+timestep 94
+collisions 163038
+timestep 95
+collisions 163272
+timestep 96
+collisions 163497
+timestep 97
+collisions 163722
+timestep 98
+collisions 163950
+timestep 99
+collisions 164163
+timestep 100
+collisions 164388
+100 timesteps took 8.477033 seconds
+collisions 164613
+timestep 1
+collisions 164613
+timestep 2
+collisions 164838
+timestep 3
+collisions 165069
+timestep 4
+collisions 165300
+timestep 5
+collisions 165516
+timestep 6
+collisions 165729
+timestep 7
+collisions 165954
+timestep 8
+collisions 166182
+timestep 9
+collisions 166410
+timestep 10
+collisions 166641
+timestep 11
+collisions 166866
+timestep 12
+collisions 167103
+timestep 13
+collisions 167358
+timestep 14
+collisions 167610
+timestep 15
+collisions 167892
+timestep 16
+collisions 168186
+timestep 17
+collisions 168492
+timestep 18
+collisions 168807
+timestep 19
+collisions 169131
+timestep 20
+collisions 169482
+timestep 21
+collisions 169809
+timestep 22
+collisions 170151
+timestep 23
+collisions 170511
+timestep 24
+collisions 170892
+timestep 25
+collisions 171282
+timestep 26
+collisions 171699
+timestep 27
+collisions 172149
+timestep 28
+collisions 172599
+timestep 29
+collisions 173067
+timestep 30
+collisions 173538
+timestep 31
+collisions 174033
+timestep 32
+collisions 174549
+timestep 33
+collisions 175059
+timestep 34
+collisions 175578
+timestep 35
+collisions 176088
+timestep 36
+collisions 176595
+timestep 37
+collisions 177111
+timestep 38
+collisions 177633
+timestep 39
+collisions 178155
+timestep 40
+collisions 178665
+timestep 41
+collisions 179148
+timestep 42
+collisions 179589
+timestep 43
+collisions 180009
+timestep 44
+collisions 180414
+timestep 45
+collisions 180798
+timestep 46
+collisions 181158
+timestep 47
+collisions 181491
+timestep 48
+collisions 181818
+timestep 49
+collisions 182139
+timestep 50
+collisions 182457
+timestep 51
+collisions 182769
+timestep 52
+collisions 183078
+timestep 53
+collisions 183369
+timestep 54
+collisions 183663
+timestep 55
+collisions 183960
+timestep 56
+collisions 184257
+timestep 57
+collisions 184566
+timestep 58
+collisions 184875
+timestep 59
+collisions 185205
+timestep 60
+collisions 185544
+timestep 61
+collisions 185901
+timestep 62
+collisions 186258
+timestep 63
+collisions 186627
+timestep 64
+collisions 187011
+timestep 65
+collisions 187395
+timestep 66
+collisions 187770
+timestep 67
+collisions 188151
+timestep 68
+collisions 188532
+timestep 69
+collisions 188928
+timestep 70
+collisions 189312
+timestep 71
+collisions 189705
+timestep 72
+collisions 190107
+timestep 73
+collisions 190506
+timestep 74
+collisions 190905
+timestep 75
+collisions 191310
+timestep 76
+collisions 191712
+timestep 77
+collisions 192126
+timestep 78
+collisions 192531
+timestep 79
+collisions 192921
+timestep 80
+collisions 193305
+timestep 81
+collisions 193692
+timestep 82
+collisions 194073
+timestep 83
+collisions 194469
+timestep 84
+collisions 194868
+timestep 85
+collisions 195273
+timestep 86
+collisions 195645
+timestep 87
+collisions 195999
+timestep 88
+collisions 196344
+timestep 89
+collisions 196689
+timestep 90
+collisions 197040
+timestep 91
+collisions 197478
+timestep 92
+collisions 198027
+timestep 93
+collisions 198636
+timestep 94
+collisions 199335
+timestep 95
+collisions 200103
+timestep 96
+collisions 200949
+timestep 97
+collisions 201876
+timestep 98
+collisions 202878
+timestep 99
+collisions 204006
+timestep 100
+collisions 205212
+100 timesteps took 8.482526 seconds
+collisions 206481
+500 timesteps took 42.557297 seconds
+vtune: Collection stopped.
+vtune: Using result path `/mnt/lustre/e1000/home/m23oc/m23oc/s2484724/MD/C/vtune_results'
+vtune: Executing actions  0 %                                                  vtune: Executing actions  0 % Finalizing results                               vtune: Executing actions  0 % Finalizing the result                            vtune: Executing actions  0 % Clearing the database                            vtune: Executing actions  7 % Clearing the database                            vtune: Executing actions  7 % Loading raw data to the database                 vtune: Executing actions  7 % Loading 'systemcollector-984069-r1i2n25.sc' file vtune: Executing actions 12 % Loading 'systemcollector-984069-r1i2n25.sc' file vtune: Executing actions 12 % Loading 'system-wide.perf' file                  vtune: Executing actions 12 % Updating precomputed scalar metrics              vtune: Executing actions 14 % Updating precomputed scalar metrics              vtune: Executing actions 14 % Processing profile metrics and debug information vtune: Executing actions 19 % Processing profile metrics and debug information vtune: Executing actions 19 % Setting data model parameters                    vtune: Executing actions 19 % Resolving module symbols                         vtune: Executing actions 19 % Resolving information for dangling locations     vtune: Executing actions 20 % Resolving information for dangling locations     vtune: Executing actions 20 % Resolving information for `MD'                   vtune: Executing actions 20 % Resolving information for `libc-2.28.so'         
+vtune: Warning: Cannot locate debugging information for file `/mnt/lustre/e1000/home/m23oc/m23oc/s2484724/MD/C/MD'.
+vtune: Warning: Cannot locate debugging information for file `/usr/lib64/libc-2.28.so'.
+vtune: Executing actions 21 % Resolving information for `libc-2.28.so'         vtune: Executing actions 22 % Resolving information for `libc-2.28.so'         vtune: Executing actions 22 % Resolving bottom user stack information          vtune: Executing actions 23 % Resolving bottom user stack information          vtune: Executing actions 23 % Resolving thread name information                vtune: Executing actions 24 % Resolving thread name information                vtune: Executing actions 24 % Resolving call target names for dynamic code     vtune: Executing actions 24 % Resolving interrupt name information             vtune: Executing actions 26 % Resolving interrupt name information             vtune: Executing actions 26 % Processing profile metrics and debug information vtune: Executing actions 27 % Processing profile metrics and debug information vtune: Executing actions 28 % Processing profile metrics and debug information vtune: Executing actions 29 % Processing profile metrics and debug information vtune: Executing actions 30 % Processing profile metrics and debug information vtune: Executing actions 30 % Setting data model parameters                    vtune: Executing actions 30 % Precomputing frequently used data                vtune: Executing actions 30 % Precomputing frequently used data                vtune: Executing actions 31 % Precomputing frequently used data                vtune: Executing actions 32 % Precomputing frequently used data                vtune: Executing actions 33 % Precomputing frequently used data                vtune: Executing actions 34 % Precomputing frequently used data                vtune: Executing actions 35 % Precomputing frequently used data                vtune: Executing actions 36 % Precomputing frequently used data                vtune: Executing actions 36 % Updating precomputed scalar metrics              vtune: Executing actions 37 % Updating precomputed scalar metrics              vtune: Executing actions 37 % Discarding redundant overtime data               vtune: Executing actions 39 % Discarding redundant overtime data               vtune: Executing actions 39 % Saving the result                                vtune: Executing actions 41 % Saving the result                                vtune: Executing actions 42 % Saving the result                                vtune: Executing actions 49 % Saving the result                                vtune: Executing actions 50 % Saving the result                                vtune: Executing actions 50 % Generating a report                              vtune: Executing actions 50 % Setting data model parameters                    vtune: Executing actions 75 % Setting data model parameters                    vtune: Executing actions 75 % Generating a report                              Elapsed Time: 42.765s
+    Clockticks: 121,128,000,000
+    Instructions Retired: 252,588,000,000
+    CPI Rate: 0.480
+    Retiring: 50.8% of Pipeline Slots
+        Light Operations: 50.8% of Pipeline Slots
+            FP Arithmetic: 40.7% of uOps
+                FP x87: 0.0% of uOps
+                FP Scalar: 40.7% of uOps
+                FP Vector: 0.0% of uOps
+            Other: 59.3% of uOps
+        Heavy Operations: 0.0% of Pipeline Slots
+            Microcode Sequencer: 0.0% of Pipeline Slots
+                Assists: 0.0% of Pipeline Slots
+    Front-End Bound: 0.5% of Pipeline Slots
+        Front-End Latency: 0.3% of Pipeline Slots
+            ICache Misses: 0.0% of Clockticks
+            ITLB Overhead: 0.0% of Clockticks
+            Branch Resteers: 0.0% of Clockticks
+                Mispredicts Resteers: 0.0% of Clockticks
+                Clears Resteers: 0.0% of Clockticks
+                Unknown Branches: 0.0% of Clockticks
+            DSB Switches: 0.0% of Clockticks
+            Length Changing Prefixes: 0.0% of Clockticks
+            MS Switches: 0.0% of Clockticks
+        Front-End Bandwidth: 0.3% of Pipeline Slots
+            Front-End Bandwidth MITE: 0.3% of Clockticks
+            Front-End Bandwidth DSB: 10.4% of Clockticks
+            (Info) DSB Coverage: 99.9%
+    Bad Speculation: 0.0% of Pipeline Slots
+        Branch Mispredict: 0.0% of Pipeline Slots
+        Machine Clears: 0.0% of Pipeline Slots
+    Back-End Bound: 48.6% of Pipeline Slots
+     | A significant portion of pipeline slots are remaining empty. When
+     | operations take too long in the back-end, they introduce bubbles in the
+     | pipeline that ultimately cause fewer pipeline slots containing useful
+     | work to be retired per cycle than the machine is capable to support. This
+     | opportunity cost results in slower execution. Long-latency operations
+     | like divides and memory operations can cause this, as can too many
+     | operations being directed to a single execution port (for example, more
+     | multiply operations arriving in the back-end per cycle than the execution
+     | unit can support).
+     |
+        Memory Bound: 11.4% of Pipeline Slots
+            L1 Bound: 5.9% of Clockticks
+                DTLB Overhead: 0.0% of Clockticks
+                Loads Blocked by Store Forwarding: 0.0% of Clockticks
+                Lock Latency: 0.0% of Clockticks
+                Split Loads: 0.0% of Clockticks
+                4K Aliasing: 0.9% of Clockticks
+                FB Full: 0.0% of Clockticks
+            L2 Bound: 0.0% of Clockticks
+            L3 Bound: 0.3% of Clockticks
+                Contested Accesses: 0.0% of Clockticks
+                Data Sharing: 0.0% of Clockticks
+                L3 Latency: 0.8% of Clockticks
+                SQ Full: 0.9% of Clockticks
+            DRAM Bound: 0.0% of Clockticks
+                Memory Bandwidth: 13.2% of Clockticks
+                Memory Latency: 41.6% of Clockticks
+                    Local DRAM: 0.0% of Clockticks
+                    Remote DRAM: 0.0% of Clockticks
+                    Remote Cache: 0.0% of Clockticks
+            Store Bound: 9.3% of Clockticks
+                Store Latency: 22.6% of Clockticks
+                False Sharing: 0.0% of Clockticks
+                Split Stores: 0.0% of Clockticks
+                DTLB Store Overhead: 0.0% of Clockticks
+        Core Bound: 37.2% of Pipeline Slots
+         | This metric represents how much Core non-memory issues were of a
+         | bottleneck. Shortage in hardware compute resources, or dependencies
+         | software's instructions are both categorized under Core Bound. Hence
+         | it may indicate the machine ran out of an OOO resources, certain
+         | execution units are overloaded or dependencies in program's data- or
+         | instruction- flow are limiting the performance (e.g. FP-chained long-
+         | latency arithmetic operations).
+         |
+            Divider: 88.2% of Clockticks
+             | Issue: The DIV unit is active for a significant portion of
+             | execution time.
+             | 
+             | Tips: Locate the hot long-latency operation(s) and try to
+             | eliminate them.  For example, if dividing by a constant, consider
+             | replacing the divide by a product of the inverse of the constant.
+             | If dividing an integer, consider using a right-shift instead.
+             |
+            Port Utilization: 49.9% of Clockticks
+             | Issue: A significant fraction of cycles was stalled due to Core
+             | non-divider-related issues.
+             | 
+             | Tips: Use vectorization to reduce pressure on the execution ports
+             | as multiple elements are calculated with same uOp.
+             |
+                Cycles of 0 Ports Utilized: 42.9% of Clockticks
+                 | CPU executed no uOps on any execution port during a
+                 | significant fraction of cycles. Long-latency instructions
+                 | like divides may contribute to this issue. Check the Assembly
+                 | view and Appendix C in the Optimization Guide to identify
+                 | instructions with 5 or more cycles latency.
+                 |
+                Cycles of 1 Port Utilized: 8.3% of Clockticks
+                Cycles of 2 Ports Utilized: 12.6% of Clockticks
+                Cycles of 3+ Ports Utilized: 22.1% of Clockticks
+                    ALU Operation Utilization: 32.0% of Clockticks
+                        Port 0: 41.2% of Clockticks
+                        Port 1: 45.4% of Clockticks
+                        Port 5: 17.1% of Clockticks
+                        Port 6: 24.4% of Clockticks
+                    Load Operation Utilization: 18.7% of Clockticks
+                        Port 2: 28.8% of Clockticks
+                        Port 3: 33.5% of Clockticks
+                    Store Operation Utilization: 31.1% of Clockticks
+                        Port 4: 31.1% of Clockticks
+                        Port 7: 6.2% of Clockticks
+                Vector Capacity Usage (FPU): 25.0%
+                 | This code has floating point operations and is not
+                 | vectorized. Consider using Intel Advisor to vectorize the
+                 | loops.
+                 |
+    Average CPU Frequency: 3.034 GHz 
+    Total Thread Count: 1
+    Paused Time: 0s
+Effective Physical Core Utilization: 2.6% (0.930 out of 36)
+ | The metric value is low, which may signal a poor physical CPU cores
+ | utilization caused by:
+ |     - load imbalance
+ |     - threading runtime overhead
+ |     - contended synchronization
+ |     - thread/process underutilization
+ |     - incorrect affinity that utilizes logical cores instead of physical
+ |       cores
+ | Explore sub-metrics to estimate the efficiency of MPI and OpenMP parallelism
+ | or run the Locks and Waits analysis to identify parallel bottlenecks for
+ | other parallel runtimes.
+ |
+    Effective Logical Core Utilization: 1.3% (0.934 out of 72)
+     | The metric value is low, which may signal a poor logical CPU cores
+     | utilization. Consider improving physical core utilization as the first
+     | step and then look at opportunities to utilize logical cores, which in
+     | some cases can improve processor throughput and overall performance of
+     | multi-threaded applications.
+     |
+Collection and Platform Info
+    Application Command Line: ./MD 
+    Operating System: 4.18.0-305.25.1.el8_4.x86_64 NAME="Red Hat Enterprise Linux" VERSION="8.4 (Ootpa)" ID="rhel" ID_LIKE="fedora" VERSION_ID="8.4" PLATFORM_ID="platform:el8" PRETTY_NAME="Red Hat Enterprise Linux 8.4 (Ootpa)" ANSI_COLOR="0;31" CPE_NAME="cpe:/o:redhat:enterprise_linux:8.4:GA" HOME_URL="https://www.redhat.com/" DOCUMENTATION_URL="https://access.redhat.com/documentation/red_hat_enterprise_linux/8/" BUG_REPORT_URL="https://bugzilla.redhat.com/"  REDHAT_BUGZILLA_PRODUCT="Red Hat Enterprise Linux 8" REDHAT_BUGZILLA_PRODUCT_VERSION=8.4 REDHAT_SUPPORT_PRODUCT="Red Hat Enterprise Linux" REDHAT_SUPPORT_PRODUCT_VERSION="8.4"
+    Computer Name: r1i2n25
+    Result Size: 14 MB 
+    Collection start time: 09:20:40 06/04/2024 UTC
+    Collection stop time: 09:21:23 06/04/2024 UTC
+    Collector Type: Driverless Perf system-wide sampling
+    CPU
+        Name: Intel(R) Xeon(R) Processor code named Broadwell
+        Frequency: 2.100 GHz 
+        Logical CPU Count: 72
+        Cache Allocation Technology
+            Level 2 capability: not detected
+            Level 3 capability: available
+
+If you want to skip descriptions of detected performance issues in the report,
+enter: vtune -report summary -report-knob show-issues=false -r <my_result_dir>.
+Alternatively, you may view the report in the csv format: vtune -report
+<report_name> -format=csv.
+vtune: Executing actions 100 % Generating a report                             vtune: Executing actions 100 % done                                            
